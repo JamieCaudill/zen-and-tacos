@@ -1,0 +1,25 @@
+/* Header.css */
+
+.header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 0 2rem;
+}
+
+.header__button {
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.header__logo {
+  height: 5rem;
+  pointer-events: none;
+}
