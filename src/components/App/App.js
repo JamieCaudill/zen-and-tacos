@@ -1,9 +1,9 @@
 import './App.css';
+import Header from '../Quotes/Header';
 
 function App() {
   return (
-    <div className="App">Zen and Tacos</div>
-  );
-}
+    <Header />
+)}
 
 export default App;
