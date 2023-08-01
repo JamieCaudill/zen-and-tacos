@@ -16,7 +16,7 @@ function App() {
   return (
     <main className="app">
       <Header />
-      <Card quote={quote} />
+      <Card quote={quote} setQuote={setQuote} getRandomQuote={getRandomQuote} />
     </main>
   )
 }

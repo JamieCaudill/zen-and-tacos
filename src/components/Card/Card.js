@@ -2,14 +2,18 @@
 
 import './Card.css';
 
-const Card = ({ quote }) => {
+const Card = ({ quote, setQuote, getRandomQuote }) => {
+  const handleClick = () => {
+    getRandomQuote()
+      .then(data => setQuote(data))
+  }
   return (
     <section className="card">
       <div className="card__container">
         <p className="card__quote">{quote.content}</p>
         <p className="card__author">{`- ${quote.author}`}</p>
-        <button className="card__button">🌮</button>
       </div>
+      <button className="card__button" onClick={handleClick}>🌮</button>
     </section>
   )
 }
