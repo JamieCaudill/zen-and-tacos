@@ -47,8 +47,7 @@ function App() {
             handleFavorite={handleFavorite}
             error={error}
           />}
-          />
-        <Route path='/error' element={<Error />} />
+        />
       </Routes>
     </main>
   )
