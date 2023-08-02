@@ -23,6 +23,17 @@
   justify-content: center;
 }
 
+.card__favorite {
+  background-color: #282c34;
+  border: 0;
+  align-self: flex-end;
+  font-size: 1rem;
+  padding: 0;
+  margin: -1rem;
+  cursor: pointer;
+  color: #61dafb;
+}
+
 .card__quote {
   margin: 1rem 0 0 0 ;
 }

@@ -10,6 +10,10 @@
   padding: 0 2rem;
 }
 
+.header__text {
+  align-self: center;
+}
+
 .header__button {
   background-color: #61dafb;
   border: none;
@@ -22,4 +26,5 @@
 .header__logo {
   height: 5rem;
   pointer-events: none;
+  padding-left: 1.5rem;
 }

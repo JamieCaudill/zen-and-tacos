@@ -7,6 +7,7 @@ import Card from '../Card/Card';
 function App() {
 
   const [quote, setQuote] = useState({})
+  const [favorites, setFavorites] = useState([])
   
   useEffect(() => {
     getRandomQuote()
@@ -16,7 +17,12 @@ function App() {
   return (
     <main className="app">
       <Header />
-      <Card quote={quote} setQuote={setQuote} getRandomQuote={getRandomQuote} />
+      <Card quote={quote} 
+        setQuote={setQuote} 
+        getRandomQuote={getRandomQuote}
+        favorites={favorites}
+        setFavorites={setFavorites}
+      />
     </main>
   )
 }
