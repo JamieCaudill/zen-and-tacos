@@ -14,7 +14,6 @@ const Card = ({ quote, setQuote, getRandomQuote, favorites, setFavorites }) => {
       })
   }
 
-
   return (
     <section className="card">
       <div className="card__container">
