@@ -8,12 +8,10 @@ const Favorites = ({ favorites }) => {
   
     const favCards = favorites.map(favorite => {
       return (
-        <section className="card">
-          <div className="card__container">
-            <p className="card__quote">{favorite.content}</p>
-            <p className="card__author">{`- ${favorite.author}`}</p>
-          </div>
-        </section>
+        <div className="favorites__container">
+          <p className="favorites__quote">{favorite.content}</p>
+          <p className="favorites__author">{`- ${favorite.author}`}</p>
+        </div>
       )
     })
   
