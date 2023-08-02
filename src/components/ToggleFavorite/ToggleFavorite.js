@@ -1,5 +1,4 @@
 // ToggleFavorite //
-import { useEffect, useState } from 'react';
 import './ToggleFavorite.css'
 
 const ToggleFavorite = ({quote, setQuote, favorites, setFavorites}) => {
