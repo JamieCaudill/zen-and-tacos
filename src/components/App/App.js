@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Card from '../Card/Card';
 import Error from '../Error/Error';
+import Favorites from '../Favorites/Favorites';
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
             error={error}
           />}
         />
+        <Route path="/favorites" element={<Favorites favorites={favorites} />} />
       </Routes>
     </main>
   )
