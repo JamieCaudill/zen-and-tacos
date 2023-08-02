@@ -2,8 +2,9 @@
 
 import './Card.css';
 import ToggleFavorite from '../ToggleFavorite/ToggleFavorite';
+import Error from '../Error/Error';
 
-const Card = ({ quote, setQuote, getRandomQuote, favorites, setFavorites }) => {
+const Card = ({ quote, setQuote, getRandomQuote, favorites, setFavorites, error }) => {
 
   const handleClick = () => {
     getRandomQuote()
@@ -12,6 +13,11 @@ const Card = ({ quote, setQuote, getRandomQuote, favorites, setFavorites }) => {
         setQuote({...data, isFavorite: false})
       })
   }
+
+  if (error) {
+    return (
+      <Error />
+    )}
 
   return (
     <section className="card">
