@@ -1,4 +1,4 @@
-describe('template spec', () => {
+describe('home page', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000')
     cy.intercept('GET', 'https://api.quotable.io/random', {fixture: 'randomQuote.json'}).as('getRandomQuote')
