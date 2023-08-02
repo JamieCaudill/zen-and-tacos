@@ -5,11 +5,11 @@ const ToggleFavorite = ({quote, handleFavorite}) => {
 
   if (quote.isFavorite) {
     return (
-      <button className="card__favorite" onClick={handleFavorite}>❤️</button>
+      <button className="card__favorite" id={quote._id} onClick={handleFavorite}>❤️</button>
     ) 
   } else { 
     return (
-      <button className="card__favorite" onClick={handleFavorite}>🤍</button>
+      <button className="card__favorite" id={quote._id} onClick={handleFavorite}>🤍</button>
     )
   }
 }

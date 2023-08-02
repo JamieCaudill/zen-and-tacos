@@ -11,6 +11,7 @@ function App() {
 
   const [quote, setQuote] = useState({})
   const [favorites, setFavorites] = useState([])
+  const [selectedQuote, setSelectedQuote] = useState({})
   const [error, setError] = useState('')
   
   useEffect(() => {
@@ -28,12 +29,16 @@ function App() {
       })
   }
 
-  const handleFavorite = () => { 
-    if (quote.isFavorite) {
-      setQuote({...quote, isFavorite: false})
-    } else {
+
+
+  const handleFavorite = (event) => { 
+    const target = event.target.id;
+    if (quote._id === target && !quote.isFavorite) {
+      setQuote({...quote, isFavorite: true})
       setFavorites([...favorites, quote])
-      setQuote({...quote, isFavorite: true})    
+    } else {
+      const filteredFavorites = favorites.filter(favorite => favorite._id !== target)
+      setFavorites(filteredFavorites)
     }
   }
  
@@ -49,7 +54,7 @@ function App() {
             error={error}
           />}
         />
-        <Route path="/favorites" element={<Favorites favorites={favorites} />} />
+        <Route path="/favorites" element={<Favorites handleFavorite={handleFavorite} favorites={favorites} />} />
       </Routes>
     </main>
   )
