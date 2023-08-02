@@ -5,7 +5,6 @@ import ToggleFavorite from '../ToggleFavorite/ToggleFavorite';
 
 const Card = ({ quote, setQuote, getRandomQuote, favorites, setFavorites }) => {
 
-  
   const handleClick = () => {
     getRandomQuote()
       .then(data => {
