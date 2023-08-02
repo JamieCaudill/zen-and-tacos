@@ -1,17 +1,7 @@
 // ToggleFavorite //
 import './ToggleFavorite.css'
 
-const ToggleFavorite = ({quote, setQuote, favorites, setFavorites}) => {
-
-  const handleFavorite = () => { 
-    if (quote.isFavorite) {
-
-      setQuote({...quote, isFavorite: false})
-    } else {
-      setFavorites([...favorites, quote])
-      setQuote({...quote, isFavorite: true})    
-    }
-  }
+const ToggleFavorite = ({quote, handleFavorite}) => {
 
   if (quote.isFavorite) {
     return (

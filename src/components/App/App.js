@@ -18,6 +18,23 @@ function App() {
       .catch(error => setError(`Sorry, something went wrong. Please try again later.`))
       console.log(error)
   }, [])
+
+  const handleClick = () => {
+    getRandomQuote()
+      .then(data => {
+        console.log(data) 
+        setQuote({...data, isFavorite: false})
+      })
+  }
+
+  const handleFavorite = () => { 
+    if (quote.isFavorite) {
+      setQuote({...quote, isFavorite: false})
+    } else {
+      setFavorites([...favorites, quote])
+      setQuote({...quote, isFavorite: true})    
+    }
+  }
  
   return (
     <main className="app">
@@ -25,10 +42,9 @@ function App() {
       <Routes>
         <Route path="/" element ={
           <Card quote={quote} 
-            setQuote={setQuote} 
-            getRandomQuote={getRandomQuote}
+            handleClick={handleClick}
             favorites={favorites}
-            setFavorites={setFavorites}
+            handleFavorite={handleFavorite}
             error={error}
           />}
           />
