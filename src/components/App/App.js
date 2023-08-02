@@ -29,13 +29,11 @@ function App() {
       })
   }
 
-
-
   const handleFavorite = (event) => { 
     const target = event.target.id;
     if (quote._id === target && !quote.isFavorite) {
-      setQuote({...quote, isFavorite: true})
-      setFavorites([...favorites, quote])
+      setQuote((prevQuote) => ({...prevQuote, isFavorite: true}))
+      setFavorites((prevFavorites) => [...prevFavorites, {...quote, isFavorite: true}])
     } else {
       const filteredFavorites = favorites.filter(favorite => favorite._id !== target)
       setFavorites(filteredFavorites)
