@@ -23,7 +23,7 @@ const Card = ({ quote, setQuote, getRandomQuote, favorites, setFavorites, error 
     <section className="card">
       <div className="card__container">
         <p className="card__quote">{quote.content}</p>
-        <p className="card__author">{`- ${quote.author}`}</p>}
+        <p className="card__author">{`- ${quote.author}`}</p>
         <ToggleFavorite quote={quote} setQuote={setQuote} favorites={favorites} setFavorites={setFavorites} />
       </div>
       <button className="card__button" onClick={handleClick}>🌮</button>

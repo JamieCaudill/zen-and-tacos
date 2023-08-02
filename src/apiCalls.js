@@ -3,7 +3,7 @@
 async function getRandomQuote() {
 
   try {
-  const response = await fetch("https://api.quotable.io/randomm");
+  const response = await fetch("https://api.quotable.io/random");
   if (!response.ok) { 
     throw new Error(response.statusText)
   }
