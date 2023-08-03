@@ -20,6 +20,7 @@ const Favorites = ({ favorites, handleFavorite }) => {
     return (
       <section className="favorites">
         <h2 className="favorites__title">Favorites</h2>
+        {!favorites.length || <p>Click the heart to remove from favorites.</p>}
         {favCards}
         {!favorites.length && <p className="favorites__message">You have no favorites yet. Click the heart on a quote to add it to your favorites.</p>}
       </section>
