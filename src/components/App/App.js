@@ -7,6 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 import Card from '../Card/Card';
 import Favorites from '../Favorites/Favorites';
 
+
 function App() {
 
   const [quote, setQuote] = useState({})
