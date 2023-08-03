@@ -10,8 +10,10 @@
   padding: 0 2rem;
 }
 
-.header__text {
+a {
   align-self: center;
+  color: white;
+  text-decoration: none;
 }
 
 .header__button {
