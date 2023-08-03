@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Card from '../Card/Card';
 import Favorites from '../Favorites/Favorites';
+import NotFound from '../NotFound/NotFound';
 
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
           />}
         />
         <Route path="/favorites" element={<Favorites handleFavorite={handleFavorite} favorites={favorites} />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </main>
   )
