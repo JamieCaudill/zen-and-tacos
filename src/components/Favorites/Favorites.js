@@ -2,6 +2,7 @@
 
 import './Favorites.css';
 import ToggleFavorite from '../ToggleFavorite/ToggleFavorite';
+import PropTypes from 'prop-types';
 
 /// filter out duplicates here
 
@@ -28,3 +29,8 @@ const Favorites = ({ favorites, handleFavorite }) => {
 }
 
 export default Favorites;
+
+Favorites.propTypes = {
+  favorites: PropTypes.array.isRequired,
+  handleFavorite: PropTypes.func.isRequired
+}

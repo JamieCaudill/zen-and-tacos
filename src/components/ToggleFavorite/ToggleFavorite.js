@@ -1,5 +1,6 @@
 // ToggleFavorite //
 import './ToggleFavorite.css'
+import PropTypes from 'prop-types';
 
 const ToggleFavorite = ({quote, handleFavorite}) => {
 
@@ -15,3 +16,8 @@ const ToggleFavorite = ({quote, handleFavorite}) => {
 }
 
 export default ToggleFavorite;
+
+ToggleFavorite.propTypes = {
+  quote: PropTypes.object.isRequired,
+  handleFavorite: PropTypes.func.isRequired
+}
