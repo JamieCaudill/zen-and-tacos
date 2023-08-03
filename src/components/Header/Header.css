@@ -30,3 +30,19 @@ a {
   pointer-events: none;
   padding-left: 1.5rem;
 }
+
+@media screen and (max-width: 750px) {
+  .header__text {
+    display: none;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .header__button {
+    margin-bottom: 1rem;
+  }
+  .header__logo {
+    padding: 0;
+    margin: 1rem 0 1rem 0;
+  }
+}
