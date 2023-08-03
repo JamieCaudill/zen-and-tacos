@@ -18,6 +18,7 @@ const Card = ({ quote, handleClick, handleFavorite, error }) => {
         <p className="card__author">{`- ${quote.author}`}</p>
         <ToggleFavorite quote={quote} handleFavorite={handleFavorite} />
       </div>
+      {quote.isFavorite && <p className="card__message">Saved to favorites!</p>}
       <button className="card__button" onClick={handleClick}>🌮</button>
     </section>
   )

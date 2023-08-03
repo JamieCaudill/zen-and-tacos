@@ -38,6 +38,10 @@
   margin: 1rem 0 0 0 ;
 }
 
+.card__message {
+  margin: 0;
+  padding: 0;
+}
 .card__button {
   background-color: white;
   font-size: 4rem;
