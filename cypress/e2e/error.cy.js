@@ -2,7 +2,7 @@
 describe('error page', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000')
-    cy.intercept('GET', 'https://api.quotable.io/random', {statusCode: 500}).as('serverError')
+    cy.intercept('GET', 'https://api.themotivate365.com/stoic-quote', {statusCode: 500}).as('serverError')
   })
   it('should display an error message when there is a server side error', () => {
     cy.visit('http://localhost:3000')

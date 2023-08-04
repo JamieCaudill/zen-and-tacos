@@ -3,7 +3,7 @@
 async function getRandomQuote() {
 
   try {
-  const response = await fetch("https://api.quotable.io/random");
+  const response = await fetch("https://api.themotivate365.com/stoic-quote");
   if (!response.ok) { 
     throw new Error(response.statusText)
   }

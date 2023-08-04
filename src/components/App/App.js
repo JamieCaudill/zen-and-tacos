@@ -17,7 +17,7 @@ const App = () => {
   
   useEffect(() => {
     getRandomQuote()
-      .then(data => setQuote(data))
+      .then(data => setQuote({...data, _id: Date.now(), isFavorite: false}))
       .catch(error => setError(`Sorry, something went wrong. Please try again later.`))
       console.log(error)
   }, [])
@@ -25,19 +25,19 @@ const App = () => {
   const handleClick = () => {
     getRandomQuote()
       .then(data => {
-        setQuote({...data, isFavorite: false})
+        setQuote({...data, _id: Date.now(), isFavorite: false})
       })
   }
 
   const handleFavorite = (event) => { 
-    const target = event.target.id;
+    const target = parseInt(event.target.id);
     if (quote._id === target && !quote.isFavorite) {
       setQuote((prevQuote) => ({...prevQuote, isFavorite: true}))
       setFavorites((prevFavorites) => [...prevFavorites, {...quote, isFavorite: true, _id: Date.now()}])
     } else if (quote._id === target && quote.isFavorite) {
       return;
     } else {
-      const filteredFavorites = favorites.filter(favorite => favorite._id !== parseInt(target))
+      const filteredFavorites = favorites.filter(favorite => favorite._id !== target)
       setFavorites(filteredFavorites)
     }
   }

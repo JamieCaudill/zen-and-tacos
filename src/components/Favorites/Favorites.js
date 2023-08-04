@@ -9,7 +9,7 @@ const Favorites = ({ favorites, handleFavorite }) => {
     const favCards = favorites.map(favorite => {
       return (
         <div className="favorites__container" key={favorite._id}>
-          <p className="favorites__quote">{favorite.content}</p>
+          <p className="favorites__quote">{favorite.quote}</p>
           <p className="favorites__author">{`- ${favorite.author}`}</p>
           <ToggleFavorite quote={favorite} handleFavorite={handleFavorite} />
         </div>
