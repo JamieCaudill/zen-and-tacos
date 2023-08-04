@@ -62,4 +62,3 @@ Wins:
 ### CONTRIBUTORS
 
 Jamie Caudill: <https://github.com/JamieCaudill>
-Andrea Sorenson: <https://github.com/andreasorensen>
