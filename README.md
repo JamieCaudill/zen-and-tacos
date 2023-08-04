@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# OVERLOOK
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## by Jamie Caudill
 
-## Available Scripts
+### DESCRIPTION
 
-In the project directory, you can run:
+Zen and the Art of Tacos is a web-based application for anxious taco lovers. Users are able to generate random inspirational and relaxing quotes by clicking on the taco. Quotes are able to be saved and seen on the favorites page. Quotes may also be removed from favorites.
 
-### `npm start`
+### LINKS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Project spec: [Spec](https://frontend.turing.edu/projects/module-3/showcase.html).
+Project repo: [Zen and Tacos](https://github.com/JamieCaudill/zen-and-tacos)
+<!-- Deployed link: [Deployed]() -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Tech Stack
 
-### `npm test`
+- React
+- Cypress
+- React Router
+- HTML
+- CSS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Learning Goals
 
-### `npm run build`
+- Display knowledge of React, Cypress, and Router fundamentals, as well as capability to create user stories, use Github Issues and Projects, and design and build an intuitive UI/UX.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### SETUP
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. visit [repo](https://github.com/JamieCaudill/zen-and-tacos)
+1. clone onto local machine
+1. `cd` into project
+1. Run `npm i` and `npm start`
+1. Enjoy!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### TESTING
 
-### `npm run eject`
+This project utilized Cypress. To run tests:
+-cd into project
+-CLI: `npx run cypress open`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### PREVIEW
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- ![app preview](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNThhYmJkZTRjY2IzMTQzNWI5NGFkNjk4ZDQ0NTQyY2Q0YWE1NmYwNyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/FUQ9wpu90OVzACbbb9/giphy.gif) -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### CONTEXT
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project was the final solo project for MOD 3, wrapping up all that we've learned about React, Cypress, Router, user stories, projects, and UI/UX design.
 
-## Learn More
+### Challenges/Wins
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Challenges:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- designing and building a web-application from scratch
+- troubleshooting Cypress
+- time management and organization with little oversight
 
-### Code Splitting
+Wins:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- feeling more comfortable with React, Cypress, and Router
+- exposure to ground-up UI/UX design and implementation
 
-### Analyzing the Bundle Size
+### CONTRIBUTORS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Jamie Caudill: <https://github.com/JamieCaudill>
+Andrea Sorenson: <https://github.com/andreasorensen>
