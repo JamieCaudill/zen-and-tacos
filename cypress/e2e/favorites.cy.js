@@ -2,7 +2,7 @@
 describe('favorites page', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000/')
-    cy.intercept('GET', 'https://api.quotable.io/random', {fixture: 'randomQuote.json'}).as('getRandomQuote')
+    cy.intercept('GET', 'https://api.themotivate365.com/stoic-quote', {fixture: 'randomQuote.json'}).as('getRandomQuote')
   })
   it('should display a message when there are no favorites', () => {
     cy.get('.header__button').click()

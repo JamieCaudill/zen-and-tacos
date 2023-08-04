@@ -2,7 +2,7 @@
 describe('home page', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000')
-    cy.intercept('GET', 'https://api.quotable.io/random', {fixture: 'randomQuote.json'}).as('getRandomQuote')
+    cy.intercept('GET', 'https://api.themotivate365.com/stoic-quote', {fixture: 'randomQuote.json'}).as('getRandomQuote')
   })
   it('should have a header with a logo, title, and button', () => {
     cy.get('.header').should('be.visible')
