@@ -12,4 +12,5 @@ async function getRandomQuote() {
     throw new Error(error)
   }
 }
+
 export { getRandomQuote }
