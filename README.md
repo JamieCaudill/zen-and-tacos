@@ -1,4 +1,4 @@
-# OVERLOOK
+# ZEN AND THE ART OF TACOS
 
 ## by Jamie Caudill
 
@@ -12,7 +12,7 @@ Project spec: [Spec](https://frontend.turing.edu/projects/module-3/showcase.html
 Project repo: [Zen and Tacos](https://github.com/JamieCaudill/zen-and-tacos)
 <!-- Deployed link: [Deployed]() -->
 
-### Tech Stack
+### TECH
 
 - React
 - Cypress
@@ -40,13 +40,13 @@ This project utilized Cypress. To run tests:
 
 ### PREVIEW
 
-<!-- ![app preview](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNThhYmJkZTRjY2IzMTQzNWI5NGFkNjk4ZDQ0NTQyY2Q0YWE1NmYwNyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/FUQ9wpu90OVzACbbb9/giphy.gif) -->
+![app preview](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHY2ZTFqODV0MTFucG9nZjVsbm8yczl1eXoxem1keWMxMzh0dTVnayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/egiGyelUCMxjMaPbHO/giphy.gif)
 
 ### CONTEXT
 
 This project was the final solo project for MOD 3, wrapping up all that we've learned about React, Cypress, Router, user stories, projects, and UI/UX design.
 
-### Challenges/Wins
+### CHALLENGES/WINS
 
 Challenges:
 
