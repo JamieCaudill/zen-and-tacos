@@ -51,3 +51,11 @@
   border: 0;
   cursor: pointer;
 }
+
+.card__button:hover {
+  width: 9.5rem;
+}
+
+.card__button:active {
+  width: 9rem;
+}

@@ -3,3 +3,7 @@
 .card__favorite {
   font-size: 2rem;
 }
+
+.card__favorite:active {
+  font-size: 1.8rem;
+}
