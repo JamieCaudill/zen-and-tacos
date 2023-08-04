@@ -23,6 +23,7 @@ const Card = ({ quote, handleClick, handleFavorite, error }) => {
       </div>
       {quote.isFavorite && <p className="card__message">Saved to favorites!</p>}
       <img className="card__button" onClick={handleClick} src={require('../../images/taco.png')} alt="taco"/>
+      <p className="card__message">Click the taco</p>
     </section>
   )
 }
