@@ -30,10 +30,7 @@ const App = () => {
   }
 
   const handleFavorite = (event) => { 
-
     const target = parseInt(event.target.id);
-    console.log(typeof target)
-    console.log(quote._id)
     if (quote._id === target && !quote.isFavorite) {
       setQuote((prevQuote) => ({...prevQuote, isFavorite: true}))
       setFavorites((prevFavorites) => [...prevFavorites, {...quote, isFavorite: true, _id: Date.now()}])
