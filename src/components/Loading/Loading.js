@@ -1,7 +1,5 @@
 // Loading.js //
 
-import './Loading.css';
-
 const Loading = () => {
   return (
     <section className="loading">

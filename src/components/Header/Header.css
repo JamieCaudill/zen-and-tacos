@@ -1,7 +1,10 @@
 /* Header.css */
 
 .header {
-  background-color: #282c34;
+  font-family: 'Zen Loop', cursive;
+  font-size: 1.75rem;
+  background-color: #e7e7e7c5;
+  opacity: 70%;
   min-height: 20vh;
   display: flex;
   align-items: center;
@@ -12,23 +15,33 @@
 
 a {
   align-self: center;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
 .header__button {
-  background-color: #61dafb;
+  font-family: 'Zen Loop', cursive;
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
-  font-size: 1.2rem;
   cursor: pointer;
+  padding-right: 1rem;
 }
 
 .header__logo {
-  height: 5rem;
-  pointer-events: none;
-  padding-left: 1.5rem;
+  height: 7rem;
+  padding-left: 1rem;
+}
+
+.header__logo:hover {
+  height: 7.5rem;
+}
+
+.header__button:hover {
+  background-color: #282c34;
 }
 
 @media screen and (max-width: 750px) {

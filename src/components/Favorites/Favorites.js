@@ -4,8 +4,6 @@ import './Favorites.css';
 import ToggleFavorite from '../ToggleFavorite/ToggleFavorite';
 import PropTypes from 'prop-types';
 
-/// filter out duplicates here
-
 const Favorites = ({ favorites, handleFavorite }) => {
       
     const favCards = favorites.map(favorite => {

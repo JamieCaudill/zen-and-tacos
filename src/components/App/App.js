@@ -9,7 +9,7 @@ import Favorites from '../Favorites/Favorites';
 import NotFound from '../NotFound/NotFound';
 
 
-function App() {
+const App = () => {
 
   const [quote, setQuote] = useState({})
   const [favorites, setFavorites] = useState([])
