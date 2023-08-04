@@ -23,6 +23,7 @@ const App = () => {
   }, [])
 
   const handleClick = () => {
+    setQuote({})
     getRandomQuote()
       .then(data => {
         setQuote({...data, _id: Date.now(), isFavorite: false})
