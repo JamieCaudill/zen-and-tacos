@@ -10,7 +10,7 @@ Zen and the Art of Tacos is a web-based application for anxious taco lovers. Use
 
 Project spec: [Spec](https://frontend.turing.edu/projects/module-3/showcase.html).
 Project repo: [Zen and Tacos](https://github.com/JamieCaudill/zen-and-tacos)
-<!-- Deployed link: [Deployed]() -->
+Deployed link: [Deployed](https://zen-and-tacos.vercel.app/)
 
 ### TECH
 
