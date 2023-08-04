@@ -59,3 +59,23 @@
 .card__button:active {
   width: 9rem;
 }
+
+@media screen and (max-width: 750px) {
+  .card__container {
+    font-size: 1rem;
+    min-width: 70%;
+    max-width: 70%;
+  }
+
+  .card__button {
+    width: 7rem;
+  }
+  
+  .card__button:hover {
+    width: 7.5rem;
+  }
+
+  .card__button:active {
+    width: 7rem;
+  }
+}

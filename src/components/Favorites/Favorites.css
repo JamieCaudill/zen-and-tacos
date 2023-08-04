@@ -22,3 +22,11 @@
   flex-direction: column;
   justify-content: center;
 }
+
+@media screen and (max-width: 750px) {
+  .favorites__container {
+    min-width: 70%;
+    max-width: 70%;
+    font-size: 1rem;
+  }
+}
