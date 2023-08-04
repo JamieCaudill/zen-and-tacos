@@ -22,7 +22,7 @@ const Card = ({ quote, handleClick, handleFavorite, error }) => {
         <ToggleFavorite quote={quote} handleFavorite={handleFavorite} />
       </div>
       {quote.isFavorite && <p className="card__message">Saved to favorites!</p>}
-      <button className="card__button" onClick={handleClick}>🌮</button>
+      <img className="card__button" onClick={handleClick} src={require('../../images/taco.png')} />
     </section>
   )
 }

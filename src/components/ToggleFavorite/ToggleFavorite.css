@@ -1,1 +1,5 @@
 /* ToggleFavorite.css */
+
+.card__favorite {
+  font-size: 2rem;
+}
