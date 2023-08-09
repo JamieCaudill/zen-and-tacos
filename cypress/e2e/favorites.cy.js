@@ -9,9 +9,10 @@ describe('favorites page', () => {
     cy.get('.favorites__message').should('have.text', 'You have no favorites yet. Click the heart on a quote to add it to your favorites.')
   })
   it('should display a message when the heart is clicked', () => {
+    cy.wait('@getRandomQuote')
     cy.get('.card__favorite').click()
     cy.wait('@getRandomQuote')
-    cy.get('.card__message').should('have.text', 'Saved to favorites!')
+    cy.get('.card__message').first().should('have.text', 'Saved to favorites!')
   })
   it('should display saved quote on favorites page', () => {
     cy.get('.card__favorite').click()
