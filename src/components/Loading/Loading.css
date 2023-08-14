@@ -1,0 +1,20 @@
+/* // Loading.css // */
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.loading__icon {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  
+}

@@ -1,9 +1,12 @@
 // Loading.js //
 
+import loadingIcon from './Spinner-1s-200px.svg'
+import './Loading.css'
+
 const Loading = () => {
   return (
     <section className="loading">
-      <h2 className="loading__text">Loading...</h2>
+      <img className="loading__icon" src={loadingIcon} alt="loading" />
     </section>
   )
 }
